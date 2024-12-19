@@ -17,5 +17,5 @@ disp_button = st.button('Construir Gráfico de Dispersión')
 
 if disp_button:
     st.write('Creación del gráfico de disperción para el conjunto de datos de anuncios de venta de coches')
-    fig=px.histogram(car_data, x='odometer',y='price')
+    fig=px.scatter(car_data, x='odometer',y='price')
     st.plotly_chart(fig,use_container_width=True)
